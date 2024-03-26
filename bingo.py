@@ -118,7 +118,7 @@ def generate_sheets(n, theme=argentina):
 
 
 def print_bingo_sheets(n, output_file_path, theme=argentina):
-    bingo_boards_output = generate_sheets(n)
+    bingo_boards_output = generate_sheets(n, theme)
     # Write the generated bingo boards to a text file
     with open(output_file_path, 'w') as file:
         file.write(bingo_boards_output)
