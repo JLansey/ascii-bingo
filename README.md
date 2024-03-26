@@ -23,12 +23,12 @@ The script divides a sorted list of words into sections with similar difficulty,
 
 To generate bingo boards:
 
-\```python
+```python
 from bingo import print_bingo_sheets
 
 # Generate and print 10 bingo sheets
 print_bingo_sheets(10, 'output.txt')
-\```
+```
 
 For custom themes, replace `argentina` with your module containing `sorted_list`, `constraints`, `center_word`, and `ascii_art_header`.
 
@@ -41,13 +41,7 @@ For custom themes, replace `argentina` with your module containing `sorted_list`
 
 ## Contributing
 
-We welcome contributions, especially new themes to enhance the diversity and fun of the bingo boards! If you have an idea for a new theme or improvements to existing code:
-
-1. Fork the repository.
-2. Create your feature branch (`git checkout -b feature/AmazingTheme`).
-3. Commit your changes (`git commit -am 'Add some AmazingTheme'`).
-4. Push to the branch (`git push origin feature/AmazingTheme`).
-5. Open a Pull Request.
+We welcome contributions, especially new themes to enhance the diversity and fun of the bingo boards!
 
 ## Example
 
