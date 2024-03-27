@@ -37,6 +37,7 @@ constraints = [
 # set to None if you want the center word to be randomly selected instead
 center_word = "WOWISIMO"
 
+# https://patorjk.com/software/taag/#p=display&f=Slant&t=boludo%20BINGO
 ascii_art_header = '''    __          __          __         ____  _____   ____________ 
    / /_  ____  / /_  ______/ /___     / __ \/  _/ | / / ____/ __ \\
   / __ \/ __ \/ / / / / __  / __ \   / /_/ // //  |/ / / __/ / / /
