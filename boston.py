@@ -33,6 +33,7 @@ constraints = [
 
 center_word = None
 
+# https://patorjk.com/software/taag/#p=display&f=Slant&t=Boston%20BINGO
 ascii_art_header = '''    ____             __                 ____  _____   ____________ 
    / __ )____  _____/ /_____  ____     / __ )/  _/ | / / ____/ __ \\
   / __  / __ \/ ___/ __/ __ \/ __ \   / __  |/ //  |/ / / __/ / / /
