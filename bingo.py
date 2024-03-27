@@ -2,22 +2,28 @@ import random
 import textwrap
 import argentina
 
+
+def create_even_sections(cur_list, sections):
+    total_words = len(cur_list)
+    # Convert list to a NumPy array for easy manipulation
+    idxs = [round(i * total_words / sections) for i in range(sections)]
+    idxs += [total_words]  # Ensure the last section goes to the end of the list
+    # Use the indices to split the list into sections
+    sections_list = [cur_list[idxs[i]:idxs[i + 1]] for i in range(sections)]
+    return sections_list
+
 # Function to generate a bingo chart
-def generate_bingo_chart(word_list, center_word, sections=5):
-    # Remove "Wowisimo" from the list for now as it will be placed in the center
+def generate_bingo_chart(word_list, center_word, width=5):
+
+    # Remove the center word from the list for now as it will be placed in the center
     if center_word:
         word_list.remove(center_word)
 
-    # Calculate the number of words per section
-    words_per_section = len(word_list) // sections
-
+    sections = create_even_sections(word_list, width)
     # Create the bingo board
     bingo_board = []
-    for i in range(sections):
-        # Get the section slice
-        section = word_list[i * words_per_section: (i + 1) * words_per_section]
-        # Randomly pick words from the section
-        selected_words = random.sample(section, 5)  # Pick 5 words from each section
+    for section in sections:
+        selected_words = random.sample(section, width)  # Pick 5 words from each section
         bingo_board.extend(selected_words)
 
     # Randomize the final board order, except the center slot for "Wowisimo"
@@ -27,7 +33,7 @@ def generate_bingo_chart(word_list, center_word, sections=5):
         bingo_board.insert(center_index, center_word)  # Insert "Wowisimo" at the center
 
     # Convert list to 5x5 format
-    bingo_board_formatted = [bingo_board[i:i + 5] for i in range(0, 25, 5)]
+    bingo_board_formatted = [bingo_board[i:i + width] for i in range(0, width ** 2, width)]
 
     return bingo_board_formatted
 
@@ -86,7 +92,9 @@ def format_word_for_cell(word, width=15, height=3):
 
 def generate_ascii_bingo_chart_text(bingo_chart, ascii_art_header, width=15, height=3):
     # ascii_bingo_chart = ascii_art_header
-    ascii_bingo_chart = center_ascii_art(ascii_art_header, (width + 1) * 5 + 1) + '\n'  # Center the header
+    bingo_width = len(bingo_chart)
+
+    ascii_bingo_chart = center_ascii_art(ascii_art_header, (width + 1) * bingo_width + 1) + '\n'  # Center the header
     card_str = ascii_bingo_chart  # Start with the ASCII art header
     # Process each row in the bingo chart.
     for row in bingo_chart:
@@ -103,10 +111,10 @@ def generate_ascii_bingo_chart_text(bingo_chart, ascii_art_header, width=15, hei
     return card_str
 
 
-def generate_one_bingo(theme=argentina):
+def generate_one_bingo(theme=argentina, width=5):
     # Convert the example bingo chart to a tab-separated format
     cur_list = create_sublist_from_constraints(theme.sorted_list, theme.constraints).copy()
-    bingo_chart_example = generate_bingo_chart(cur_list, theme.center_word)
+    bingo_chart_example = generate_bingo_chart(cur_list, theme.center_word, width)
 
     # bingo_chart_example
     ascii_bingo_chart_text = generate_ascii_bingo_chart_text(bingo_chart_example, theme.ascii_art_header)
