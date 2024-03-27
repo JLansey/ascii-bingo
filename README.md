@@ -13,12 +13,6 @@ A Python script designed to create visually appealing, printable ASCII bingo boa
 
 The script divides a sorted list of words into sections with similar difficulty, selecting randomly to ensure even difficulty while respecting constraints between words to avoid thematic overlaps. It places a special, optional word in the center of each board, suitable for thematic emphasis or as a free space.
 
-## Installation
-
-1. Clone this repository.
-2. Ensure Python 3.6 or higher is installed on your system.
-3. (Optional) Modify `argentina.py` or create a new theme file to customize the word sets and constraints according to your needs.
-
 ## Usage
 
 To generate bingo boards:
