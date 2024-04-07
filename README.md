@@ -15,6 +15,8 @@ The script divides a sorted list of words into sections with similar difficulty,
 
 ## Usage
 
+Here is a google collab you can use to generate sheets https://colab.research.google.com/drive/1NoXk_H19G1bryV4dN6uHWrulj_cPRytF?usp=sharing
+
 To generate bingo boards:
 
 ```python
