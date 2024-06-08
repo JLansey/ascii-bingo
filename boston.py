@@ -4,7 +4,7 @@ sorted_list = [
     "MIT", "Bunker Hill","Sam Adams","Harpoon", "Medford", "Somerville", "Cambidge",
     "Charles River", "Southie", "Freedom Trail","Boston University",
     "Boston Common", "North End", "Wicked", "Dunken", "CVS", "Irish", "Italian",
-    "Lobstah", "Patriots", "Celtics", "Bruins", "Whicked", "Loud Bicycle", "Market Basket",
+    "Lobstah", "Patriots", "Celtics", "Bruins", "Loud Bicycle", "Market Basket",
     "The T", "Blue Line", "Green Line", "Red Line", "Orange Line", "Charlie Card",
     "Beacon Hill", "Back Bay", "Brookline", "The Harbor", "Lincoln Labs", "Logan",
     "Quincy Market", "Faneuil Hall", "Newbury Street", "Copley", "Smaaht","Paul Revere",
@@ -28,7 +28,21 @@ constraints = [
     {"Big Dig", "Mass Pike"},  # Infrastructure.
     {"Ben Affleck","Mark Wahlberg"},
     {"Red line is down/delayed", "Green line is down/delayed"},
-    {"i-robot", "Boston Dynamics"}
+    {"i-robot", "Boston Dynamics"},
+    college, University
+    student discount,
+     beantown, hubways, blue bikes
+bike lane, Greenway, emerald necklace
+the Charles
+mass general
+one with only university
+the common
+Patriots day
+🎶🎵sweet Caroline
+jplicks, the pru
+"which way is it to *"
+"why is it this cold"
+    {"pahk the cah in havad yad","havad yad"}
 ]
 
 center_word = None
