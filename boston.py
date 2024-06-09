@@ -1,24 +1,30 @@
 # Boston themed bingo words
 sorted_list = [
-    "Red Sox", "Clam Chowder", "Fenway", "Harvard",
-    "MIT", "Bunker Hill","Sam Adams","Harpoon", "Medford", "Somerville", "Cambidge",
+    "Red Sox", "The Sox", "Clam Chowder",
+    "MIT", "Bunker Hill","Sam Adams","Harpoon", "Medford", "Somerville", "Cambridge",
     "Charles River", "Southie", "Freedom Trail","Boston University",
-    "Boston Common", "North End", "Wicked", "Dunken", "CVS", "Irish", "Italian",
-    "Lobstah", "Patriots", "Celtics", "Bruins", "Loud Bicycle", "Market Basket",
+    "The Common", "The North End", "Wicked", "Dunkin", "CVS", "Irish", "Italian",
+    "Lobstah", "The Patriots", "The Celtics", "The Bruins", "Loud Bicycle", "Market Basket",
+    "Masshole", "haav'd ya'd", "Harvard",
+    "The Greenway", "The emerald necklace",
+    "The Charles",
+    "Mass General", "Fenway",
+    "Sweet Caroline ...",
+    "JPlicks", "The Pru",
+    "why is it this cold",
     "The T", "Blue Line", "Green Line", "Red Line", "Orange Line", "Charlie Card",
-    "Beacon Hill", "Back Bay", "Brookline", "The Harbor", "Lincoln Labs", "Logan",
-    "Quincy Market", "Faneuil Hall", "Newbury Street", "Copley", "Smaaht","Paul Revere",
+    "Beacon Hill", "Back Bay", "Brookline", "The Harbor", "Logan", "which way is it to *",
+    "Quincy Market", "Faneuil Hall", "Newbury Street", "Sma'aht","Paul Revere",
      "The Cape", "Martha's Vineyard", "Nantucket", "Boston Tea Party", "Red line is down/delayed", "Green line is down/delayed",
-    "Ben Affleck", "Mark Wahlberg", "i-robot", "Boston Dynamics"
+    "Patriots day", "Lincoln Labs", "Boston Marathon",
+    "Ben Affleck", "Mark Wahlberg", "i-robot", "Boston Dynamics", "pahk the cah in haav'd ya'd"
 ]
 
 constraints = [
-    {"Red Sox", "Patriots", "Celtics", "Bruins"},  # Boston sports teams.
+    {"Red Sox", "The Patriots", "The Celtics", "The Bruins", "The Sox", "Fenway"},  # Boston sports teams.
     {"Clam Chowder", "Lobstah"},  # Iconic Boston foods.
     {"Freedom Trail", "Bunker Hill"},  # Historical sites.
-    {"Fenway Park", "Boston Marathon"},  # Iconic Boston events/locations.
-    {"Medford", "Somerville", "Cambidge"}, # cool neighborhoods
-    {"Harvard", "MIT"},  # Universities.
+    {"Medford", "Somerville", "Cambridge"}, # cool neighborhoods
     {"Irish", "Italian"},
     {"Blue Line", "Green Line", "Red Line", "Orange Line"},  # T lines.
     {"Beacon Hill", "Back Bay", "Southie", "Brookline"},  # Neighborhoods.
@@ -29,20 +35,10 @@ constraints = [
     {"Ben Affleck","Mark Wahlberg"},
     {"Red line is down/delayed", "Green line is down/delayed"},
     {"i-robot", "Boston Dynamics"},
-    college, University
-    student discount,
-     beantown, hubways, blue bikes
-bike lane, Greenway, emerald necklace
-the Charles
-mass general
-one with only university
-the common
-Patriots day
-🎶🎵sweet Caroline
-jplicks, the pru
-"which way is it to *"
-"why is it this cold"
-    {"pahk the cah in havad yad","havad yad"}
+    {"Beantown", "The Hub of the Universe"},
+    {"blue bikes", "bike lane"},
+    {"Patriots day", "Boston Marathon"},
+    {"pahk the cah in haav'd ya'd", "haav'd ya'd", "Harvard"}
 ]
 
 center_word = None
